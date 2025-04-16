@@ -1,0 +1,32 @@
+body {
+  background: lightpink;
+  font-family: "Lucida Console", "Courier New";
+}
+.p1 {
+  background: rgb(255, 170, 227);
+  color: rgb(214, 31, 68);
+  margin: 10px;
+  padding: 5px;
+  border: double;
+  list-style: circle inside;
+}
+
+a {
+  text-emphasis: filled red;
+  color: darkmagenta;
+}
+header {
+  background: rgb(255, 170, 227);
+  color: #f52485;
+  margin: 50px;
+  padding: 5px;
+  border: double;
+  font-variant: small-caps;
+  text-align: center;
+  font-weight: bolder;
+}
+h2 {
+  font-size: x-large;
+  font-weight: bold;
+  color: crimson;
+}
