@@ -8,7 +8,6 @@ body {
   margin: 10px;
   padding: 5px;
   border: double;
-  list-style: circle inside;
 }
 
 a {
@@ -29,4 +28,13 @@ h2 {
   font-size: x-large;
   font-weight: bold;
   color: crimson;
+}
+
+ul.p2 {
+  background: rgb(255, 170, 227);
+  color: rgb(214, 31, 68);
+  margin: 10px;
+  padding: 5px;
+  border: double;
+  list-style-type: square;
 }
