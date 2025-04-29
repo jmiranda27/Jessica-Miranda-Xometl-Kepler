@@ -16,7 +16,7 @@ a {
 }
 header {
   background: rgb(255, 170, 227);
-  color: #f52485;
+  color: #ff0048;
   margin: 50px;
   padding: 5px;
   border: double;
@@ -30,11 +30,50 @@ h2 {
   color: crimson;
 }
 
-ul.p2 {
+li {
   background: rgb(255, 170, 227);
   color: rgb(214, 31, 68);
   margin: 10px;
   padding: 5px;
   border: double;
   list-style-type: square;
+}
+
+.navbar ul {
+  overflow: auto;
+  background: rgb(255, 170, 227);
+  display: flex;
+  gap: 5em;
+}
+.navbar li {
+  float: inline-start;
+  list-style: none;
+  margin: 10px;
+  font-weight: bolder;
+  border: none;
+}
+.navbar a {
+  padding: 5px;
+  text-emphasis: none;
+}
+
+a:hover {
+  opacity: 0.3;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-basis: 100%;
+}
+.ex-date {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+#connect {
+  display: flex;
+  justify-content: center;
 }
