@@ -16,7 +16,6 @@ a {
 }
 header {
   background: rgb(255, 170, 227);
-  color: #f52485;
   margin: 50px;
   padding: 5px;
   border: double;
@@ -29,12 +28,70 @@ h2 {
   font-weight: bold;
   color: crimson;
 }
+h3 {
+  font-size: 40px;
+  color: rgb(3, 39, 240);
+}
 
-ul.p2 {
+li {
   background: rgb(255, 170, 227);
   color: rgb(214, 31, 68);
   margin: 10px;
   padding: 5px;
   border: double;
   list-style-type: square;
+}
+
+.navbar ul {
+  overflow: auto;
+  background: rgb(255, 170, 227);
+  gap: 10em;
+}
+.navbar li {
+  float: inline-start;
+  list-style: none;
+  margin: 10px;
+  font-weight: bolder;
+  border: none;
+}
+.navbar a {
+  padding: 15px;
+  text-emphasis: none;
+}
+
+a:hover {
+  opacity: 0.3;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-basis: 100%;
+  font-family: "Lucida Console", "Courier New";
+  border: double;
+  background: rgb(255, 170, 227);
+  color: rgb(214, 31, 68);
+  margin: 10px;
+  padding: 5px;
+}
+
+.ex-detail {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-basis: 100%;
+  font-family: "Lucida Console", "Courier New";
+}
+
+.ex-date {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  font-family: "Lucida Console", "Courier New";
+}
+
+#connect {
+  display: flex;
+  justify-content: center;
 }
