@@ -4,7 +4,7 @@ body {
 }
 .p1 {
   background: rgb(255, 170, 227);
-  color: rgb(214, 31, 68);
+  color: #2d0042;
   margin: 10px;
   padding: 5px;
   border: double;
@@ -12,7 +12,7 @@ body {
 
 a {
   text-emphasis: filled red;
-  color: darkmagenta;
+  color: #2d0042;
 }
 header {
   background: rgb(255, 170, 227);
@@ -26,16 +26,20 @@ header {
 h2 {
   font-size: x-large;
   font-weight: bold;
-  color: crimson;
+  color: #6b0015;
 }
 h3 {
   font-size: 40px;
-  color: rgb(3, 39, 240);
+  color: #370101;
+}
+
+h1 {
+  margin-top: 0;
 }
 
 li {
   background: rgb(255, 170, 227);
-  color: rgb(214, 31, 68);
+  color: #2d0042;
   margin: 10px;
   padding: 5px;
   border: double;
@@ -46,6 +50,8 @@ li {
   overflow: auto;
   background: rgb(255, 170, 227);
   gap: 10em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .navbar li {
   float: inline-start;
@@ -71,7 +77,7 @@ a:hover {
   font-family: "Lucida Console", "Courier New";
   border: double;
   background: rgb(255, 170, 227);
-  color: rgb(214, 31, 68);
+  color: #2d0042;
   margin: 10px;
   padding: 5px;
 }
@@ -94,4 +100,60 @@ a:hover {
 #connect {
   display: flex;
   justify-content: center;
+}
+
+/* For smart phones */
+@media screen and (max-width: 600px) {
+  .navbar ul {
+    padding-left: 0%;
+    font-size: 20px;
+  }
+  header {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    align-content: center;
+  }
+
+  .experience-container {
+    text-wrap: balance;
+  }
+
+  .p1 {
+    text-wrap: balance;
+    text-align: center;
+  }
+}
+/* For tablets */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .navbar ul {
+    padding-left: 0%;
+    font-size: 25px;
+  }
+  header {
+    margin: 0;
+    padding: 0;
+  }
+  h3 {
+    text-align: center;
+    font-variant-caps: all-small-caps;
+  }
+}
+/* For desktop computers */
+@media screen and (min-width: 900px) {
+  h3 {
+    text-align: center;
+    font-variant-caps: all-small-caps;
+  }
+
+  header {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+  }
+  main {
+    text-size-adjust: 125%;
+    inline-size: auto;
+    writing-mode: horizontal-tb;
+  }
 }
