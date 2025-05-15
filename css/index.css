@@ -1,13 +1,20 @@
 body {
   background: lightpink;
   font-family: "Lucida Console", "Courier New";
+  color: #2d0042;
+  height: fit-content;
 }
+
+/* mobile first  */
+
 .p1 {
   background: rgb(255, 170, 227);
   color: #2d0042;
   margin: 10px;
   padding: 5px;
   border: double;
+  text-wrap: balance;
+  text-align: center;
 }
 
 a {
@@ -16,12 +23,16 @@ a {
 }
 header {
   background: rgb(255, 170, 227);
-  margin: 50px;
+  /*margin: 50px;*/
   padding: 5px;
   border: double;
   font-variant: small-caps;
   text-align: center;
   font-weight: bolder;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  align-content: center;
 }
 h2 {
   font-size: x-large;
@@ -52,6 +63,8 @@ li {
   gap: 10em;
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 0%;
+  font-size: 20px;
 }
 .navbar li {
   float: inline-start;
@@ -80,6 +93,7 @@ a:hover {
   color: #2d0042;
   margin: 10px;
   padding: 5px;
+  text-wrap: balance;
 }
 
 .ex-detail {
@@ -102,30 +116,15 @@ a:hover {
   justify-content: center;
 }
 
-/* For smart phones */
-@media screen and (max-width: 600px) {
-  .navbar ul {
-    padding-left: 0%;
-    font-size: 20px;
-  }
-  header {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    align-content: center;
-  }
-
-  .experience-container {
-    text-wrap: balance;
-  }
-
-  .p1 {
-    text-wrap: balance;
-    text-align: center;
-  }
+/* skills custom*/
+#skills ul {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-basis: 100%;
 }
+
 /* For tablets */
-@media screen and (min-width: 600px) and (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .navbar ul {
     padding-left: 0%;
     font-size: 25px;
