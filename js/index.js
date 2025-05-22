@@ -83,3 +83,32 @@ messageForm.addEventListener("submit", function (event) {
 
   event.target.reset();
 });
+
+//Leson- 13
+
+fetch("https://api.github.com/users/jmiranda27/repos")
+  .then((res) => {
+    if (!res.ok) {
+      console.log("Not Successful");
+    }
+    return res.text();
+  })
+  .then(function (resText) {
+    const repositories = JSON.parse(resText);
+    //console.log("Repositories:", repositories);
+
+    const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul");
+
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement("li");
+      project.textContent = repositories[i].name;
+
+      projectList.appendChild(project);
+    }
+    return repositories;
+  })
+
+  .catch((error) => {
+    console.log("section is empty");
+  });
