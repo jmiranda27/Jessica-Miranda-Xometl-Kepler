@@ -38,6 +38,7 @@ h2 {
   font-size: x-large;
   font-weight: bold;
   color: #6b0015;
+  display: flex;
 }
 h3 {
   font-size: 40px;
@@ -55,6 +56,7 @@ li {
   padding: 5px;
   border: double;
   list-style-type: square;
+  display: flex;
 }
 
 .navbar ul {
@@ -113,7 +115,6 @@ a:hover {
 
 #connect {
   display: flex;
-  justify-content: center;
 }
 
 /* skills custom*/
@@ -215,4 +216,18 @@ textarea {
   grid-template-columns: auto;
   align-items: 1fr left;
   gap: 0.5rem;
+}
+
+#projects ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+#projects li {
+  padding: 1rem;
+  border-radius: 5px;
+  list-style: none;
+  display: flex;
 }
