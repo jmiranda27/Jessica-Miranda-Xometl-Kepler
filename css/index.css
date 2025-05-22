@@ -156,3 +156,63 @@ a:hover {
     writing-mode: horizontal-tb;
   }
 }
+
+#form {
+  display: flex;
+  justify-content: flex-end;
+  height: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+#messageForm {
+  display: grid;
+  gap: 1rem;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #dfe1e5;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.button {
+  width: 75%;
+  padding: 0.8rem;
+  background: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: text;
+}
+
+.message-container {
+  margin-top: 1rem;
+}
+.message-container ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+.message-container li {
+  padding: 1.25rem;
+  border-radius: 8px;
+  border-left: 4px solid;
+  display: grid;
+  grid-template-columns: auto;
+  align-items: 1fr left;
+  gap: 0.5rem;
+}
